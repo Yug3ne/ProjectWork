@@ -62,5 +62,5 @@ This is a cart where a user sees the books they have added to cart, the books th
 - CHECKOUT FORM:
 A component where a user can add the buy a book they like.
 
-
+- Filter
 This is a component that is used to help a user search through the books with ease.
