@@ -27,7 +27,7 @@ const Footer = () => {
         </VStack>
 
         <Text textAlign="center" fontSize="sm" mt={4}>
-          © {new Date().getFullYear()} Developed by Eugene,Edith, Chris, Gideon.
+          © {new Date().getFullYear()} Developed by Gichia, Eugene,Edith, Chris, Gideon.
         </Text>
         <Text textAlign="center" fontSize="sm">
           Powered by React Js.
