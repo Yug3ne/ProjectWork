@@ -1,0 +1,117 @@
+.navbar {
+  background-color:rgb(8, 64, 97);
+  /* padding: 15px 30px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  margin: 0;
+  top: 0;
+  position: sticky;
+}
+.brand-name{
+  color: #fff;
+  font-weight: 800;
+  margin-top: 30px;
+  font-size: 30px;
+  text-decoration: none;
+}
+.image{
+  margin-top: 25px;
+}
+
+.logo h2 {
+  color: #fff;
+  margin: 0;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.menu li {
+  margin-right: 15px;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.menu li a:hover {
+  color: green;
+}
+
+.fa-shopping-cart {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.fa-shopping-cart:hover {
+  color: green;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start; 
+  }
+
+  .menu ul {
+    margin-top: 15px;
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .menu li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 3px;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background-color: #333;
+    text-align: center;
+    z-index: 1000;
+    transition: all 0.3s ease;
+  }
+
+  .menu.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
