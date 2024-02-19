@@ -23,7 +23,7 @@ const initialValues = {
 const onSubmit = async (values, { setSubmitting, resetForm }) => {
   try {
     setSubmitting(true);
-    const response = await fetch('http://localhost:8080/messages', {
+    const response = await fetch('https://json-server-vercel-zeta-puce.vercel.app/messages', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

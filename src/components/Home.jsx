@@ -25,7 +25,7 @@ function Home() {
   const [booksPerPage] = useState(30);
   const navigate = useNavigate();
 
-  const API_URL = "http://localhost:8080/books";
+  const API_URL = "https://json-server-vercel-zeta-puce.vercel.app/books";
 
   useEffect(() => {
     async function fetchBooks() {
@@ -76,7 +76,7 @@ function Home() {
 
   const addToCart = async (book) => {
     try {
-      const response = await fetch("http://localhost:8080/cart", {
+      const response = await fetch("https://json-server-vercel-zeta-puce.vercel.app/cart", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

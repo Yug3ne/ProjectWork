@@ -27,7 +27,7 @@ function Cart() {
 
   async function fetchCartItems() {
     try {
-      const response = await fetch('http://localhost:8080/cart');
+      const response = await fetch('https://json-server-vercel-zeta-puce.vercel.app/cart');
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
@@ -40,7 +40,7 @@ function Cart() {
 
   async function removeFromCart(bookId) {
     try {
-      const response = await fetch(`http://localhost:8080/cart/${bookId}`, {
+      const response = await fetch(`https://json-server-vercel-zeta-puce.vercel.app/cart/${bookId}`, {
         method: 'DELETE',
       });
       if (!response.ok) {

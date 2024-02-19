@@ -15,7 +15,7 @@ function BookDetails() {
 
   const addToCart = async (book) => {
     try {
-      const response = await fetch("http://localhost:8080/cart", {
+      const response = await fetch("https://json-server-vercel-zeta-puce.vercel.app/cart", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -39,7 +39,7 @@ function BookDetails() {
   useEffect(() => {
     async function fetchBookDetails() {
       try {
-        const response = await fetch(`http://localhost:8080/books/${id}`);
+        const response = await fetch(`https://json-server-vercel-zeta-puce.vercel.app/books/${id}`);
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }

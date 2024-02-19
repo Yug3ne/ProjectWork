@@ -46,7 +46,7 @@ export default function Checkout({ cartTotal }) {
       const formData = { ...values, cartTotal };
 
       // Submit form data to server
-      const response = await fetch("http://localhost:8080/checkout", {
+      const response = await fetch("https://json-server-vercel-zeta-puce.vercel.app/checkout", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
