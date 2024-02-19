@@ -4,9 +4,9 @@ README.MD:
 
 
 
-##Tech stack:
+## Tech stack:
 
-Styling: Bootstrap, CSS and Chakra UI library 
+Styling:CSS and Chakra UI library 
 Logic and structure: React, JavaScript and HTML
 
 
@@ -21,7 +21,7 @@ Next run react app using npm start
 
 
 
-The main concept of this application:
+## The main concept of this application:
 
 To give users a place to come and search for a book of their choice find out about it and if interested buy the book.
 
